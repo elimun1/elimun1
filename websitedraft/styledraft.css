@@ -1,0 +1,33 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	background-color: #f5f4d7 /* Optional: Light background to see the body */
+}
+
+div#container {
+    border: 5px solid black;  /* Thicker border for visibility */
+    width: 1000px;            /* Fixed width for the container */
+    margin: 45px auto;        /* Center the container horizontally with top margin */
+    padding: 20px;            /* Padding inside the container */
+    text-align: center;       /* Center the text inside */
+    background-color:#f5f4d7;  /* Background color to make the container visible *
+
+}
+
+
+
+
