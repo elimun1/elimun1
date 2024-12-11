@@ -1,0 +1,81 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	 background-image: url('../images/wyoming.jpg');
+	background-size: contain;  /* Ensures the image scales proportionally */
+    background-position: center;  /* Centers the image */
+    background-repeat:;
+    background-size: cover;      /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+
+
+
+    
+
+}
+
+
+div#container {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    border: 5px solid black;  /* Thicker border for visibility */
+    width: 100%;            /* Fixed width for the container */
+    max-width:1000px;
+    margin: 45px auto;        /* Center the container horizontally with top margin */
+    padding: 20px;            /* Padding inside the container */
+    text-align: center;       /* Center the text inside */
+    
+
+    justify-content: center;  /* Align items vertically (in a column) */
+    align-items: center;      /* Align items horizontally (in a row) */
+    flex-wrap: wrap;          /* Allow items to wrap to new lines if necessary */
+}
+
+p {
+    color: yellow; /* Change to your desired color */
+    font-size: 21px; /* Adjust the size to your preference */
+}
+
+
+p1{
+	color:black;
+}
+
+p2{
+	color:white;
+	font-size: 28px;
+}
+
+.button-link {
+    display: inline-block;  /* Allows width, height, and padding to work */
+    background-color: #4CAF50;  /* Green background */
+    color: white;  /* White text */
+    padding: 12px 24px;  /* Padding inside the button */
+    text-align: center;  /* Centers the text inside */
+    text-decoration: none;  /* Removes the underline from the link */
+    border-radius: 5px;  /* Rounds the corners */
+    font-size: 16px;  /* Sets the font size */
+    font-weight: bold;  /* Makes the text bold */
+    cursor: pointer;  /* Changes the cursor to a pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transition on hover */
+}
+
+.button-link:hover {
+    background-color: #45a049;  /* Darker green when hovered */
+    transform: scale(1.05);  /* Slightly enlarges the button */
+}

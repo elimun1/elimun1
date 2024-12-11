@@ -1,0 +1,72 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	/*background-color:#383836; /* Optional: Light background to see the body */
+
+	background-image: url('grid.jpg');
+    background-size: cover;      /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    
+}
+
+div#container {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    border: 5px solid black;  /* Thicker border for visibility */
+    width: 100%;            /* Fixed width for the container */
+    max-width:1000px;
+    margin: 45px auto;        /* Center the container horizontally with top margin */
+    padding: 20px;            /* Padding inside the container */
+    text-align: center;       /* Center the text inside */
+    background-color:#f5f4d7;  /* Background color to make the container visible */
+
+    justify-content: center;  /* Align items vertically (in a column) */
+    align-items: center;      /* Align items horizontally (in a row) */
+    flex-wrap: wrap;          /* Allow items to wrap to new lines if necessary */
+}
+
+div#container img:nth-last-of-type(1),
+div#container img:nth-last-of-type(2),
+div#container img:nth-last-of-type(3) {
+    width: 100%;              /* Make the images responsive (take 100% of the container width) */
+    
+    max-width: 300px;         /* Optional: Set a max width for images */
+    height: auto;             /* Maintain aspect ratio */
+    object-fit: cover;        /* Optional: Cover the area without distortion */
+}
+
+p {
+    color: blue; /* Change to your desired color */
+    font-size: 10px; /* Adjust the size to your preference */
+}
+
+h1 {
+    color:black;
+    font-size:15px;
+}
+
+
+h2{
+
+	font-size:24px;
+}
+
+
+h3{
+	font-size:30px;
+}

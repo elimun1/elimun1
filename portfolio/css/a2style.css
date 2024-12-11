@@ -1,0 +1,58 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	
+	
+}
+
+
+#container {
+	
+}
+
+nav ul{
+		list-style: none;
+		padding-left:0px;
+		border: 1px solid green;
+	}
+	
+	nav li{
+		display: inline;
+	}
+	
+
+nav a{
+	text-decoration:none; 
+	border:1px solid black;
+	padding:5px;
+	margin:5px;
+	display:inline-block;
+	border-radius:8px;
+	background:black;
+	color:white;
+}
+
+nav a:hover {
+	background: orange;
+	
+	
+		
+		
+
+
+
+
