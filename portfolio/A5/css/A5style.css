@@ -1,0 +1,177 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	
+	background-color:lightblue;
+}
+
+
+#container {
+  border: 2px solid black;
+  position: left;
+  
+	
+}
+
+#textcontainer {
+  border: 2px solid black;
+  position: left;
+  width: 50%;
+  
+}
+
+#something {
+  border: 2px solid red;
+  border-radius: 25px;
+  z-index: -1;
+  background-color:orangered;
+}
+
+#something2{
+  border: 2px solid red;
+  border-radius: 50px 20px;
+  background-color:darkred;
+}
+
+#something3 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+#something4{
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  background-color:lightgreen;
+}
+#something5{
+  border-radius: 2em / 5em;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  background-color: lightsalmon;
+}
+#something6 {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
+#something7{
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+#something8{
+  height: 50px;
+  width: 100px;
+  background-color: #555;
+  border-radius: 50%;
+}
+#somthing9 {
+	width: 100px;
+	height: 50px;
+	transform: skew(20deg);
+	background: #555;
+}
+#something10{
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+}
+
+div#something10 {
+
+     background: blue;
+
+}
+
+div#something10:hover {
+
+     background: red;
+
+}
+div#something9 {
+
+     background: blue;
+     transition: all 2s;
+
+}
+
+div#something9:hover {
+
+     background: red;
+
+}
+div#something8 {
+
+     background: blue;
+     transition: background 2s, font-size 500ms;
+
+}
+
+div#something8:hover {
+
+     background: red;
+     font-size: 3em;
+
+}
+
+div#something7 {
+
+     background: blue;
+     transition: all 2s;
+
+}
+
+div#something7:hover {
+
+     background: red;
+     transform: translate(-50px,-50px);
+
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+div#something6 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+h1{
+  font-size:1em;
+}

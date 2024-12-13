@@ -1,0 +1,149 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically (top container first, then columns) */
+            height: 100%; /* Ensure the body takes full height */
+            background-image: url('../images/fantasy.jpeg');
+            background-repeat: no-repeat;
+            background-size:cover; /* Scale the image to cover the entire body area */
+    		background-position: center; /* Center the image within the body */
+    		background-color: #504aba;
+
+        }
+
+        /* Top container above the two columns */
+        #container {
+            border: 2px solid black;
+            width: 100%; /* Full width */
+            padding: 20px;
+            text-align: center; /* Center the content */
+            background-color:purple;
+        }
+
+        /* Flex container for the two columns */
+        .columns {
+            display: flex; /* Align the columns horizontally */
+            width: 100%; /* Ensure the columns take full width */
+            height: 100%; /* Full height */
+            flex-wrap: wrap;
+            margin:0;
+            padding:0;
+        }
+
+        /* Container 1 - Left Column */
+        #container1 {
+    border: 2px solid black;
+    width: 45%; /* 45% width */
+    height: 150%; /* Full height */
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue background */
+    box-sizing: border-box;
+    margin-left: 20px; /* Space between left side of screen */
+    margin-top: 30px; /* Space between top of page and container1 */
+    backface-visibility:80%;
+    background-opacity: 0.8;
+}
+
+/* Right column - Container 2 */
+#container2 {
+    border: 2px solid black;
+    width: 45%; /* 45% width */
+    height: 150%; /* Full height */
+    padding: 20px;
+    margin-left: auto; /* Push container2 to the right */
+    margin-top: -609px; /* Flush with container1 */
+    margin-right:20px;
+    background-color: rgb(128, 0, 128,0.8);
+    box-sizing: border-box;
+}
+
+#container1, #container2 {
+    transform: scale(0.8); 
+
+
+
+footer{
+	position: absolute; /* Absolute positioning relative to the nearest positioned ancestor */
+    bottom: 0; /* Position it at the bottom of the page */
+    left: 0; /* Position it at the left side of the page */
+    width: 100%; /* Ensure it spans the entire width of the page */
+    background-color:; /* Optional: Add a background color */
+    color: red; /* Optional: Text color */
+    padding: 10px; /* Optional: Add some padding */
+    text-align: bottom-left; /* Align text to the left */
+    box-sizing: border-box; 
+}
+
+p {
+	color:white;
+}
+
+p2 {
+	font-size: 12px;
+}
+
+h1 {
+	color:white;
+}
+h2 {
+	font-size: 0.5em;
+}
+
+header {
+	font-size: 1.5em;
+	color:white;
+}
+
+section {
+	color:white;
+}
+
+.content {
+    padding-bottom: 50px; /* Adds padding at the bottom of the content area */
+    flex-grow: 1;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+	
+	
+} /* closes 1024px+ */
+
+
+

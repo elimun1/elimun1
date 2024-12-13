@@ -23,7 +23,9 @@ body {
     background-position: center; /* Centers the background image */
 
 
-
+	border-style: dotted;
+    border-color: yellow;
+    border-radius: auto;
     
 
 }
@@ -53,7 +55,7 @@ p {
 
 
 p1{
-	color:black;
+	color:lightblue;
 }
 
 p2{
@@ -61,21 +63,39 @@ p2{
 	font-size: 28px;
 }
 
-.button-link {
-    display: inline-block;  /* Allows width, height, and padding to work */
-    background-color: #4CAF50;  /* Green background */
-    color: white;  /* White text */
-    padding: 12px 24px;  /* Padding inside the button */
-    text-align: center;  /* Centers the text inside */
-    text-decoration: none;  /* Removes the underline from the link */
-    border-radius: 5px;  /* Rounds the corners */
-    font-size: 16px;  /* Sets the font size */
-    font-weight: bold;  /* Makes the text bold */
-    cursor: pointer;  /* Changes the cursor to a pointer */
-    transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transition on hover */
+/* Navigation menu styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;  /* Enable Flexbox */
+  flex-wrap: wrap; /* Allow the links to wrap onto the next line if necessary */
+  justify-content: center;  /* Center the links horizontally */
 }
 
-.button-link:hover {
-    background-color: #45a049;  /* Darker green when hovered */
-    transform: scale(1.05);  /* Slightly enlarges the button */
+nav ul li {
+  margin: 10px 20px;  /* Add space between the links */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;  /* Text color */
+  background-color: #007bff;  /* Background color for the box */
+  padding: 10px 20px;  /* Space inside the box */
+  border-radius: 5px;  /* Optional: rounded corners */
+  transition: background-color 0.3s ease;  /* Smooth background transition */
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;  /* Darker background color when hovering */
+}
+
+img{
+    border-style: dotted;
+    border-color: blue;
+}
+
+.scaledImage {
+  width: 250px;   /* Set the width of the image */
+  height: auto;   /* Maintain the aspect ratio */
 }

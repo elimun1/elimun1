@@ -1,0 +1,131 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+
+body {
+	background:#ccc;
+	
+}
+
+
+#container {
+	width:80%;
+	margin:auto;
+	background:white;
+}
+
+header {
+	background: black;
+	color:white;
+	font-size:2.5em;
+	line-height:1.4em;
+}
+
+header {
+	padding:2em;
+	text-align:center;
+}
+
+footer {
+	padding: 1em;
+	background: black;
+	color:white;
+	font-size:1em;
+	line-height:1.4em;
+}
+
+nav ul {
+	list-style:none;
+	padding-left:0px;
+}
+
+nav a {
+	display:block;
+	text-decoration:none;
+	padding:1em;
+	border:1px;
+}
+
+
+
+
+
+figure {
+	margin:0px;
+	border:1px solid black;
+	padding:0.5em;
+	
+}
+
+figure img {
+	width: 100%;
+}
+
+section {
+	background:#fceda9;
+	padding:1em;
+}
+
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+
+nav ul{
+	display:flex;
+}
+
+nav li{
+	flex: 1 1 auto;
+}
+
+
+main {
+	display: flex;
+}
+
+figure,section {
+	flex:  1 1 auto;
+}
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+
