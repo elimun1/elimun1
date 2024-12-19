@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  
+  <meta charset="utf-8">
+  
+  <title>A8</title>
+   <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="A8.css">  
+  
+</head>
+
+
+<body>
+
+  <div id="container">
+
+<header>
+<h1>The Legend of the Duende (Gnome)</h1>
+<h2>Irrefutable Evidence!</h2>
+</header>
+
+<main>
+
+<p>In Mexican folklore, gnomes—often referred to as duendes—are mystical, mischievous creatures believed to inhabit forests, caves, and remote places. Though their origins trace back to European traditions, in Mexico, duendes are deeply intertwined with local myths and legends. These small, elusive beings are known to be protectors of nature, sometimes helping those who show respect for the environment, but they can also cause mischief or misfortune if angered. Their role in Mexican mysticism is often a blend of folklore, cautionary tales, and reverence for the unseen forces that govern the natural world. Gnomes in Mexican culture are symbols of mystery, connection to the earth, and the delicate balance between humans and nature.</p>
+
+
+  <button id="txtm">More</button>
+
+<p id="special">The belief in duendes is prevalent across various regions of Mexico, especially in rural areas where superstitions are still widely held. Many locals recount personal encounters with these elusive beings, often describing them as small, humanoid figures dressed in earthy clothes or with glowing eyes. Sightings typically occur in isolated locations, such as forests or mountains, where individuals report hearing strange sounds, feeling watched, or even seeing small, shadowy figures darting through the underbrush. These reports have sparked curiosity, as well as a sense of mystery and unease.</p>
+
+
+
+  <button id="am">MORE!</button>
+
+<figure id="lost">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/8-T7c0cxLSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
+
+  <button id="im">MOAR!</button>
+
+<figure id="gmn">
+  <img src="duende.jpg" alt="Sighting">
+  <figcaption>Last Known Sighting of the Duende. (circa. 2005)</figcaption>
+</figure>
+
+<footer>&copy; Elias Munoz 2024</footer>
+
+</main>
+
+
+
+  </div><!-- close "container" -->
+  
+  
+  <!-- Paste the jQuery starter code below here -->
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+<script>
+  $(document).ready(function() {
+
+$('p#special').hide();
+$('#lost').hide();
+$('#gmn').hide();
+$('#am').hide();
+$('#im').hide();
+
+$('#txtm').click(function() {
+
+  //$('p#special').show();
+  //$('p#special').slideDown(850);
+  $('p#special').slideToggle(850);
+  $('#am').slideToggle(850);
+  //$('p#special').fadeIn(1600);
+
+});//close click txtm function
+
+$('h1').click(function() {
+  
+  $('body').toggleClass('tuesday');//calls the tuesday in style
+  
+});//close click h1
+
+$('#am').click(function() {
+
+  $('#lost').slideToggle(850);
+  $('#im').slideToggle(850);
+  
+});//close click am function
+
+$('#im').click(function() {
+
+  $('#gmn').slideToggle(850);
+    
+});//close click im function
+
+
+
+  }); //close .ready()
+</script>
+  
+  
+
+</body>
+  
+</html> 

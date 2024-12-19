@@ -1,0 +1,191 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	background: rgb(255,118,118);
+	background: radial-gradient(circle, rgba(255,118,118,1) 0%, rgba(255,151,151,1) 49%, rgba(255,118,118,1) 100%);
+	font-family: Andale Mono;
+}
+
+
+/* Ensure the container spans the full viewport */
+#container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#container1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#container2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    font-size: 1.5em;
+    color:	#740000;
+}
+
+#container3 {
+    position: fixed;           /* Fix the container to the bottom of the screen */
+    bottom: 20px;                 /* Place the container at the bottom */
+    left: 0;                   /* Align the container to the left side of the page */
+    width: 100%;               /* Make the container take the full width of the viewport */
+    background-color: #740000; /* Red background color */
+    display: flex;             /* Flexbox for layout inside */
+    flex-direction: column;    /* Stack children vertically */
+    padding: 10px;             /* Add some padding inside */
+    box-sizing: border-box;    /* Ensure padding is included in the width */
+    color: 	#ffa5a5;  
+    font-size:1em            /* Text color */
+
+}
+
+
+#container05 {
+    height: 100%;
+    display: flex;
+    flex-direction: ;
+    font-size: 3em;
+    margin: 10px;
+    text-align: center;
+    transform: rotate(45deg)translate(100px, -200px);  /* Rotate each <p> element back to a normal orientation */
+    margin-top: -500px;
+    font-weight: bolder;
+    font-family: fantasy;
+    color:#510000;
+    opacity: 60%;
+}
+
+#container051 {
+    height: 100%;
+    display: flex;
+    flex-direction: ;
+    font-size: 3em;
+    margin: 10px;
+    text-align: center;
+    transform: rotate(45deg);  /* Rotate each <p> element back to a normal orientation */
+    margin-top: -500px;
+    font-weight: bolder;
+    font-family: fantasy;
+    color:#510000;
+    opacity: 60%;
+}
+
+#container052 {
+    height: 100%;
+    display: ;
+    flex-direction: ;
+    font-size: 3em;
+    margin: 10px;
+    text-align: center;
+    transform: rotate(45deg)translate(-20px, 200px);  /* Rotate each <p> element back to a normal orientation */
+    margin-top: -500px;
+    font-weight: bolder;
+    font-family: fantasy;
+    color:#510000;
+    opacity: 60%;
+}
+
+#container053 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    margin: 10px;
+    text-align: center;
+    transform: rotate(-45deg) translate(-100px, 200px); /* Top-right to bottom-left */
+    margin-top: -500px;
+    font-weight: bolder;
+    font-family: fantasy;
+    color: #510000;
+    opacity: 60%;
+}
+
+#container054 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    margin: 10px;
+    text-align: center;
+    transform: rotate(-45deg) translate(-100px, 200px); /* Top-right to bottom-left */
+    margin-top: -500px;
+    font-weight: bolder;
+    font-family: fantasy;
+    color: #510000;
+    opacity: 60%;
+}
+
+#container055 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    margin: 10px;
+    text-align: center;
+    transform: rotate(-45deg) translate(20px, -200px); /* Top-right to bottom-left */
+    margin-top: -500px;
+    font-weight: bolder;
+    font-family: fantasy;
+    color: #510000;
+    opacity: 60%;
+}
+
+
+
+/* Main section takes full height */
+main {
+    display: flex;               /* Use Flexbox to center content */
+    justify-content: center;     /* Center content horizontally */
+    align-items: center;         /* Center content vertically */
+    height: 100vh;               /* Make main take full height of viewport */
+}
+
+/* Make the <p> take up the full height and make text fit properly */
+p {
+    width: 90%;                  /* Adjust width to be a bit smaller than the viewport */
+    height: 90%;                 /* Make the <p> take up most of the viewport height */
+    overflow: ;              /* In case the text overflows, allow scrolling */
+    text-align: center;          /* Center text horizontally */
+    font-size: 1.5em;            /* Make the text a bit larger */
+    line-height: 1.6;            /* Line height for better readability */
+    display: flex;               /* Make <p> a flex container */
+    justify-content: center;     /* Center text horizontally inside <p> */
+    align-items: center;  
+    text-shadow: 2px 2px;       /* Center text vertically inside <p> */
+}
+
+
+/* Optional styling for header and footer */
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background:;
+}
+

@@ -1,0 +1,135 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	
+	color: #f5c345;
+	background: url(../images/fantasy.jpeg) no-repeat fixed center;
+		background-size: cover;
+}
+
+
+#container {
+	
+}
+
+main {
+	padding: 15px;
+}
+
+header, footer {
+	background: #ad48e8;
+	padding: 10px;
+	text-shadow:1px 1px #000000;
+}
+
+h1 {
+	font-size:3.8em;
+	line-height:1em;
+}
+
+section#us {
+	background:#ad48e8;
+	padding: 5px;
+	text-shadow:1px 1px #000000;
+}
+
+section#others {
+		background: rgb(173, 72,232, 0.5);
+		text-shadow:1px 1px #000000;
+		padding: 5px;
+	}
+/* Default state (Normal link color) */
+a {
+  color: blue;
+  text-decoration: ; /* Optional: Remove underline */
+}
+
+/* Visited link color (After the user has clicked the link) */
+a:visited {
+  color: purple;
+}
+
+/* Hover state (When the user hovers over the link) */
+a:hover {
+  color: red;
+}
+
+/* Active state (When the link is being clicked) */
+a:active {
+  color: green;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	body {
+		background: url(../images/fantasy.jpeg) no-repeat fixed center;
+		background-size: cover;
+	}
+	main {
+		width: 85%;
+		margin:auto;
+	}
+	
+	section#others {
+		background: rgb(173, 72,232, 0.5);
+		text-shadow:1px 1px #000000;
+		padding: 5px;
+	}
+	
+	footer {
+		background: none;
+	}
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	#container {
+	
+	}
+	p {
+		font-size: 1.5em;
+	}
+	section#others {
+		float:left;
+		width:40%;
+	}
+	
+	section#us {
+		float:right;
+		width:40%;
+	}
+	
+	footer {
+		clear:both;
+	}
+	
+} /* closes 1024px+ */

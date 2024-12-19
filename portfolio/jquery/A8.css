@@ -1,0 +1,133 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	background:#2d2d2e;
+	font-family: 'Faculty Glyphic', sans-serif;
+	
+}
+
+.tuesday {
+	background: black;
+	color: white;
+	font-size:2em;
+	font-family: 'Faculty Glyphic', sans-serif;
+}
+
+
+
+#special {
+	background:;
+	color:red;
+}
+
+h1 {
+	cursor: pointer; /*makes the clickable hand show up*/
+	color:goldenrod;
+	text-shadow:1px 1px #000000;
+}
+
+h2 {
+	cursor: pointer; /*makes the clickable hand show up*/
+	color:goldenrod;
+	text-shadow:1px 1px #000000;
+}
+
+P{
+	color:lightgoldenrodyellow;
+}
+
+figcaption{
+	color:red;
+}
+}
+
+
+figure img {
+	width: 50%;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+
+main, header {
+	padding: 10px;
+}
+
+figure img {
+	width: 65%;
+}
+
+footer{
+	padding:20px;
+	color:goldenrod;
+}
+
+} /* closes 769px+ */
+
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+#container {
+	position:relative;
+	margin:auto;
+	border:5px solid darkred;
+	border-style: dotted;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+header {
+	text-align:center;
+}
+
+
+figure img {
+	float: center;
+	width: 50%;
+	border:5px solid darkred;
+	border-style: dotted;
+} 
+
+figure iframe{
+	border:5px solid darkred;
+	border-style: dotted;
+} 
+
+
+#special {
+	border:5px solid darkred;
+	border-style: dotted;
+	padding:10px;
+} 
+}
+
+}
+/* closes 1024px+ */
